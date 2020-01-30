@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+body {
+	margin: 0!important;
+/*	padding: 15px; */
+	background-color: #FFF;
+}
+.wrapper {
+	width: 100%;
+	table-layout: fixed;
+}
+.wrapper-inner {
+	width: 100%;
+	background-color: #fff;
+	max-width: 670px;
+	margin: 0 auto;
+}
+table {
+	border-spacing: 0;
+	font-family: Roboto,sans-serif;
+	color: #727f80;
+}
+.outer-table {
+	width: 100%;
+	max-width: 670px;
+	margin: 0 auto;
+	background-color: #FFF;
+}
+td {
+    padding: 0;
+}
+/*
+.header {
+    background-color: #C2C1C1;
+}
+*/
+p {
+    margin:0;
+}
+/*
+.header p {
+    text-align: center;
+    padding: 1%;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+*/
+a {
+    color: #FF6D69;
+    text-decoration: none;
+}
+/*--- End Outer Table 1 --*/
+
+/*--- Start Two Column Sections --*/
+.two-column {
+    text-align: center;
+    font-size: 0;
+    padding: 5px 0 10px 0;
+}
+.two-column .section {
+    width: 100%;
+    max-width: 300px; /* formerly 300 */
+    display: inline-block;
+    vertical-align: top;
+}
+.two-column .content {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+.content {
+    width: 100%;
+    padding-top: 20px;
+}
+.center {
+    display: table;
+    margin: 0 auto;
+}
+img {
+    border: 0;
+}
+img.logo {
+    float: left;
+    max-width: 150px!important;
+}
+#callout {
+    float: right;
+    margin: 4% 5% 2% 0;
+    height: auto;
+    overflow: hidden;
+}
+#callout img {
+    max-width: 20px;
+}
+.social {
+    list-style-type: none;
+    margin-top: 1%;
+    padding: 0;
+}
+.social li {
+    display: inline-block;
+}
+.social li img {
+    max-width: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/*--- Start Outer Table Banner Image, Text & Button --*/
+.image img {
+    width: 100%;
+    max-width: 670px;
+    height: auto;
+}
+.main-table {
+    width: 100%;
+    max-width: 610px;
+    margin: 0 auto;
+    background-color: #FFF;
+}
+.one-column .inner-td {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+.inner-td {
+    padding: 16px;
+}
+.h2 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 45px;
+    color: #2900D2;  /* 4A4A4A */
+    margin: 12px 0 12px 0;
+}
+p.center {
+    text-align: center;
+    max-width: 580px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+.button-holder-center {
+    text-align: center;
+    margin: 5% 2% 3% 0;
+}
+.button-holder {
+    float: right;
+    margin: 5% 0 3% 0;
+}
+.btn {
+    font-size: 15px;
+    font-weight: 600;
+    background: #81BAC6;
+    color: #FFF;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 28px;
+}
+/*--- Start Two Column Image & Text Sections --*/
+.two-column img {
+    width: 100%;
+    max-width: 280px; /* formerly 280 */
+    height: auto;
+}
+.two-column .text {
+    padding: 10px 0;
+}
+/*--- Start 3 Column Image & Text Section --*/
+.outer-table-2 {
+	width: 100%;
+	max-width: 670px;
+	margin: 22px auto;
+	background-color: #C2C1C1;
+    border-bottom: 3px solid #81B9C3;
+    border-top: 3px solid #81B9C3;
+}
+.three-column {
+    text-align: center;
+    font-size: 0;
+    padding: 10px 0 30px 0;
+}
+.three-column .section {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+.three-column .content {
+    font-size: 16px;
+    line-height: 20px;
+}
+.three-column img {
+    width: 100%;
+    max-width: 125px;
+    height: auto;
+}
+.outer-table-2 p {
+	margin-top: 6px;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 23px;
+}
+/*--- Start Two Column Article Section --*/
+.outer-table-3 {
+    width: 100%;
+    max-width: 670px;
+    margin: 22px auto;
+    background-color: #C2C1C1;
+    border-top: 1px solid #636363;
+}
+.h3 {
+	text-align: left;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 24px 0 8px 0;
+	color: #ff6d69;
+}
+/*--- Start Bottom One Column Section --*/
+.inner-bottom {
+	padding: 22px;
+}
+.h1 {
+    text-align: left;!important;
+    font-size: 25px!important;
+    font-weight: 600;
+    margin: 12px 0 12px 0;
+    color: #4A4A4A;
+}
+.inner-bottom p {
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+}
+/*--- Start Footer Section --*/
+.footer {
+	width: 100%;
+	background-color: #BDE2EA;
+	margin: 0 auto;
+    color: #FFF;
+}
+.footer  img {
+	max-width: 135px;
+	margin: 0 auto;
+	display: block;
+	padding: 4% 0 4% 0;
+}
+p.footer {
+	text-align: center;
+	color: #FFF!important;
+	line-height: 30px;
+	padding-bottom: 4%;
+    text-transform: uppercase;
+}
+/*--- Media Queries --*/
+@media screen and (max-width: 400px) {
+	.h1 {
+		font-size: 22px;
+	}
+	.two-column .column, .three-column .column {
+		max-width: 100%!important;
+	}
+	.two-column img {
+		width: 100%!important;
+	}
+	.three-column img {
+		max-width: 60%!important;
+	}
+}
+@media screen and (min-width: 401px) and (max-width: 400px) {
+
+	.two-column .column {
+		max-width: 50%!important;
+	}
+	.three-column .column {
+		max-width: 33%!important;
+}
+}
+@media screen and (max-width:768px) {
+img.logo {
+	float:left !important;
+	margin-left:0% !important;
+	max-width: 150px!important;
+}
+
+#callout {
+	float:none !important;
+	margin: 0% 0% 0% 0;
+	height: auto;
+	text-align:center;
+	overflow: hidden;
+}
+#callout img {
+    max-width:26px !important; 
+}
+.two-column .section {
+	width: 100% !important;
+	max-width: 100% !important;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.two-column img {
+	width: 100% !important;
+ 	height: auto !important;
+}
+img.img-responsive {
+    width:100% !important;
+    height:auto !important;
+    max-width:100% !important;
+}
+.content {
+	width: 100%;
+	padding-top:0px !important;
+}
+}
+</style>
+ </head>
+<body>
+    <div class="wrapper">
+    	<div class="wrapper-inner">
+            <table class="outer-table">
+    			<tbody>
+    				<tr>
+    					<td class="image">
+    						<img src="https://dl.dropboxusercontent.com/s/t4vq2ho3vnyycsg/cover-email.jpg?dl=0">
+    					</td>
+	    			</tr> <!--- End Banner -->
+    	        </tbody>
+        	</table>
+            <table class="main-table">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h2">January 2020</p>
+    								<p>Happy New Year everyone 🎉🥳 and welcome to the first Olympus monthly update of 2020!</p>
+    								<br>
+    								<p>In last month's update we shared some of the impact we saw from initiatives worked on in November 2019. With December traditionally being a "short month" due to the holiday period, we had our work cut out to maintain the momentum. Nevertheless, there were some truly impactful developments that we want to share with you.</p>
+    								<br>
+    								<p>Here’s a look at what we did and what we have planned for Q1.</p>
+    								<br>
+    								<hr>
+			    				</td>
+			    			</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+            <table class="main-table">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h2">Done in December ✅</p>
+    								<p class="h3">Conversion rates continued to rise into December</p>
+                                    <p>Ok, this isn’t strictly due to December initiatives but we wanted to share it anyway. Some of the November initiatives weren't launched to 100% of users until late in the month so the full impact wasn’t seen until the first week of December. New data since the last monthly update is shown in green and represents a <b>+281%</b> increase vs the Q3 average!</p>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image">
+			    					<img src="https://dl.dropboxusercontent.com/s/8idvr10waxmovdg/2020-01-cvr.png?dl=0">
+			    				</td>
+			    			</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h3">We enabled Olympus leads to be generated outside of the Olympus Buyer Portal</p>
+                                    <p>Before this release, form leads could only be generated on the Olympus Buyer Portal. In December we unlocked the ability for the Avito team to use <b>Facebook Lead Ads</b> to generate leads without leaving Facebook while providing results to clients via the Olympus Client Portal (reports and leads access).</p>
+                                    <br>
+                                	<p>Compared to existing marketing on Facebook (which drives traffic to the portal), Avito sees a much lower average Cost Per Lead when using Facebook Lead Ads due to the reduced number of steps a buyer needs to go through.</p>
+                                    <br>
+                                	<p>The success of this initiative is very much down to the Avito team who are actively driving this. The Olympus involvement has primarly been to unlock this as a new source of leads and we look forward to seeing them grow it this year.</p>
+                                    <br>
+                                    <p><b>Impact</b></p>
+                                    <ul>
+                                        <li>Total reported form leads increased by <b>+46%</b> in Dec vs Nov (despite only being live for 2.5 weeks) and have helped Avito ecplipse prior run rates.</li>
+                                    	<li>New leads are generated at <b>-78% lower CPL</b> of existing traffic generation marketing efforts.</li>
+                                    </ul>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image">
+			    					<img src="https://dl.dropboxusercontent.com/s/hh06p0cij1uv0r7/2020-01-total-form-leads-fy2019-by-week.png?dl=0">
+			    				</td>
+			    			</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+                                    <p class="h3">We tested Contact CTAs & Forms in Search</p>
+                                    <p>We knew that Fotocasa generated 20% of their leads from their listings page. But we wanted to understand if this would generate <i>incremental</i> leads or just redistribute them across multiple pages.</p>
+                                    <br>
+                                    <p>Overall the test was positive. We saw a higher overall form lead conversion rate and the overall form leads per user increased as users who converted on the listings page were more likely to conduct form leads on other projects.</p>
+                                    <br>
+                                    <p><b>Impact</b></p>
+                                    <ul>
+                                        <li><b>+15.5%</b> overall form lead conversion rate for users who visited the search page</li>
+                                    	<li><b>+31.6%</b> increase in "form leads per user" for users who already converted once</li>
+                                    </ul>
+                                    <p><i>On 3 Jan, this feature was deployed to 100% of users.</i></p>
+                                    <br>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image">
+			    					<img src="https://dl.dropboxusercontent.com/s/e56psc91l6qnyqa/2020-01-search-cta.png?dl=0">
+			    				</td>
+			    			</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h3">We started our first ranking experiment to support Avito 5Leads30</p>
+    								<p>5Leads30 is an Avito goal to generate an average of 5 daily form leads for all new projects in their first 30 days.</p>
+    								<br>
+    								<p>We ran an experiment over the holiday break designed to boost the search ranking of projects in their first 30 days. So far we’ve not seen a clear cut impact. We’re reviewing the results of the experiment now and will continue tuning this in Q1.</p>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h3">We experimented with homepage module reordering</p>
+    								<p>We ran an experiment that reordered the main two Popular Location and Featured Projects modules on the homepage. In November, we made significant CTR improvements to the Featured Projects module and we wanted to know if moving it higher up the page would be net-positive for leads overall.</p>
+                                    <br>
+    								<p>Well, it wasn’t 😞</p>
+                                    <br>
+    								<p>Although traffic to detail pages remained flat, we actually saw a reduction in overall form lead conversion rate, indicating that it’s better to funnel users through the listings page so that they can make more informed choices about what project detail pages they choose to visit. There are some useful insights gained here though that we’ll factor into our Q1 plans.</p>
+                                    <br>
+                                    <hr>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+            <table class="main-table">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h2">To come in Q1 2020 🔜</p>
+                                    <p>We said last month that we’d share our Q1 OKRs this time, so here there are:</p>
+    								<p class="h3">O1: Increase profitability of Olympus platform by growing and adding new organic traffic sources</p>
+                                    <ul>
+                                        <li><b>KR1:</b> Increase monthly organic leads from 750 to 1,500 (+100% vs Dec 19 exit rate)</li>
+                                    	<li><b>KR2:</b> Increase weekly Google SEO visits from 550 to 1100 (+100% vs Dec 19 exit rate)</li>
+                                    </ul>
+    								<p class="h3">O2: Reduce seller churn by increasing overall leads & improving seller satisfaction with Olympus tools</p>
+                                    <ul>
+                                        <li><b>KR1:</b> Increase average daily organic leads in first 30 days since publication from X to Y (by +100% vs Dec 19)</li>
+                                    	<li><b>KR2:</b> Increase the percentage of projects acheiving an average of 5 daily form leads in the first 30 days since publication from X to Y (by +100% vs Dec 19)</li>
+                                    </ul>
+    								<p class="h3">O3: Understand and address key buyer pain points with Olympus buyer portal</p>
+                                    <ul>
+                                        <li><b>KR1:</b> Launch 2 initiatives to address specific buyer pain points/needs</li>
+                                    </ul>
+    								<p class="h3">O4: Olympus data is available in Adevinta Data Platform to improve data driven decisions and unlock opportunities</p>
+                                    <ul>
+                                        <li><b>KR1:</b> 99% Coverage BIC Behavioural</li>
+                                    	<li><b>KR2:</b> 99% Fidelity BIC Behavioural</li>
+                                        <li><b>KR3:</b> 99% Coverage BIC Content</li>
+                                    	<li><b>KR4:</b> 99% Fidelity BIC Content</li>
+                                    </ul>
+    								<br>
+    								<p>Although we have a list of initiatives and planned experiments designed to help achieve the above OKRs, we plan to finalise their prioritisation in early January. We’ll provide a full update next month.</p>
+    								<br>
+    								<hr>
+    								<br>
+    								<br>
+									<p>That's all for this month. If you missed last month's update, you can see a PDF version of the <a href="https://drive.google.com/a/adevinta.com/file/d/1hgrTFYCIAYA64hTXCL8rIVGUR0XhO35p/view?usp=sharing">December 2019 update here</a>. If you'd like any more detail on anything we're working on, please drop me or anyone in the Olympus team a message.</p>
+									<br>
+									<table>
+										<tr>
+											<td width="100">
+												<img src="https://dl.dropboxusercontent.com/s/vdzwsnc86pd95pw/james.png?dl=0" width="100" style="padding-right: 12px">
+											</td>
+											<td>
+												<p class="h3">James Gammon</p>
+                                    			<p>Olympus Product Mgmt</p>
+											</td>
+										</tr>
+									</table>
+
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr>
+            </table> <!--- End Main Table -->
+            <table class="outer-table-3">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="footer">
+    								<img src="https://dl.dropboxusercontent.com/s/izo2o9scjl7o8qc/olympus-logo.png?dl=0">
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr>
+    		</table> <!--- End Main Table -->
+    	</div> <!--- End Wrapper Inner -->
+    </div> <!--- End Wrapper -->
+    <br>
+</body>
+</html>

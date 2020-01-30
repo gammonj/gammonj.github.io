@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+body {
+	margin: 0!important;
+/*	padding: 15px; */
+	background-color: #FFF;
+}
+.wrapper {
+	width: 100%;
+	table-layout: fixed;
+}
+.wrapper-inner {
+	width: 100%;
+	background-color: #fff;
+	max-width: 670px;
+	margin: 0 auto;
+}
+table {
+	border-spacing: 0;
+	font-family: Roboto,sans-serif;
+	color: #727f80;
+}
+.outer-table {
+	width: 100%;
+	max-width: 670px;
+	margin: 0 auto;
+	background-color: #FFF;
+}
+td {
+    padding: 0;
+}
+/*
+.header {
+    background-color: #C2C1C1;
+}
+*/
+p {
+    margin:0;
+}
+/*
+.header p {
+    text-align: center;
+    padding: 1%;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+*/
+a {
+    color: #FF6D69;
+    text-decoration: none;
+}
+/*--- End Outer Table 1 --*/
+
+/*--- Start Two Column Sections --*/
+.two-column {
+    text-align: center;
+    font-size: 0;
+    padding: 5px 0 10px 0;
+}
+.two-column .section {
+    width: 100%;
+    max-width: 300px; /* formerly 300 */
+    display: inline-block;
+    vertical-align: top;
+}
+.two-column .content {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+.content {
+    width: 100%;
+    padding-top: 20px;
+}
+.center {
+    display: table;
+    margin: 0 auto;
+}
+img {
+    border: 0;
+}
+img.logo {
+    float: left;
+    max-width: 150px!important;
+}
+#callout {
+    float: right;
+    margin: 4% 5% 2% 0;
+    height: auto;
+    overflow: hidden;
+}
+#callout img {
+    max-width: 20px;
+}
+.social {
+    list-style-type: none;
+    margin-top: 1%;
+    padding: 0;
+}
+.social li {
+    display: inline-block;
+}
+.social li img {
+    max-width: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/*--- Start Outer Table Banner Image, Text & Button --*/
+.image img {
+    width: 100%;
+    max-width: 670px;
+    height: auto;
+}
+.main-table {
+    width: 100%;
+    max-width: 610px;
+    margin: 0 auto;
+    background-color: #FFF;
+}
+.one-column .inner-td {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+.inner-td {
+    padding: 16px;
+}
+.h2 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 45px;
+    color: #2900D2;  /* 4A4A4A */
+    margin: 12px 0 12px 0;
+}
+p.center {
+    text-align: center;
+    max-width: 580px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+.button-holder-center {
+    text-align: center;
+    margin: 5% 2% 3% 0;
+}
+.button-holder {
+    float: right;
+    margin: 5% 0 3% 0;
+}
+.btn {
+    font-size: 15px;
+    font-weight: 600;
+    background: #81BAC6;
+    color: #FFF;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 28px;
+}
+/*--- Start Two Column Image & Text Sections --*/
+.two-column img {
+    width: 100%;
+    max-width: 280px; /* formerly 280 */
+    height: auto;
+}
+.two-column .text {
+    padding: 10px 0;
+}
+/*--- Start 3 Column Image & Text Section --*/
+.outer-table-2 {
+	width: 100%;
+	max-width: 670px;
+	margin: 22px auto;
+	background-color: #C2C1C1;
+    border-bottom: 3px solid #81B9C3;
+    border-top: 3px solid #81B9C3;
+}
+.three-column {
+    text-align: center;
+    font-size: 0;
+    padding: 10px 0 30px 0;
+}
+.three-column .section {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+.three-column .content {
+    font-size: 16px;
+    line-height: 20px;
+}
+.three-column img {
+    width: 100%;
+    max-width: 125px;
+    height: auto;
+}
+.outer-table-2 p {
+	margin-top: 6px;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 23px;
+}
+/*--- Start Two Column Article Section --*/
+.outer-table-3 {
+    width: 100%;
+    max-width: 670px;
+    margin: 22px auto;
+    background-color: #C2C1C1;
+    border-top: 1px solid #636363;
+}
+.h3 {
+	text-align: left;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 24px 0 8px 0;
+	color: #ff6d69;
+}
+/*--- Start Bottom One Column Section --*/
+.inner-bottom {
+	padding: 22px;
+}
+.h1 {
+    text-align: left;!important;
+    font-size: 25px!important;
+    font-weight: 600;
+    margin: 12px 0 12px 0;
+    color: #4A4A4A;
+}
+.inner-bottom p {
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+}
+/*--- Start Footer Section --*/
+.footer {
+	width: 100%;
+	background-color: #BDE2EA;
+	margin: 0 auto;
+    color: #FFF;
+}
+.footer  img {
+	max-width: 135px;
+	margin: 0 auto;
+	display: block;
+	padding: 4% 0 4% 0;
+}
+p.footer {
+	text-align: center;
+	color: #FFF!important;
+	line-height: 30px;
+	padding-bottom: 4%;
+    text-transform: uppercase;
+}
+/*--- Media Queries --*/
+@media screen and (max-width: 400px) {
+	.h1 {
+		font-size: 22px;
+	}
+	.two-column .column, .three-column .column {
+		max-width: 100%!important;
+	}
+	.two-column img {
+		width: 100%!important;
+	}
+	.three-column img {
+		max-width: 60%!important;
+	}
+}
+@media screen and (min-width: 401px) and (max-width: 400px) {
+
+	.two-column .column {
+		max-width: 50%!important;
+	}
+	.three-column .column {
+		max-width: 33%!important;
+}
+}
+@media screen and (max-width:768px) {
+img.logo {
+	float:left !important;
+	margin-left:0% !important;
+	max-width: 150px!important;
+}
+
+#callout {
+	float:none !important;
+	margin: 0% 0% 0% 0;
+	height: auto;
+	text-align:center;
+	overflow: hidden;
+}
+#callout img {
+    max-width:26px !important; 
+}
+.two-column .section {
+	width: 100% !important;
+	max-width: 100% !important;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.two-column img {
+	width: 100% !important;
+ 	height: auto !important;
+}
+img.img-responsive {
+    width:100% !important;
+    height:auto !important;
+    max-width:100% !important;
+}
+.content {
+	width: 100%;
+	padding-top:0px !important;
+}
+}
+</style>
+ </head>
+<body>
+    <div class="wrapper">
+    	<div class="wrapper-inner">
+            <table class="outer-table">
+    			<tbody>
+    				<tr>
+    					<td class="image">
+    						<img src="https://dl.dropboxusercontent.com/s/t4vq2ho3vnyycsg/cover-email.jpg?dl=0">
+    					</td>
+	    			</tr> <!--- End Banner -->
+    	        </tbody>
+        	</table>
+            <table class="main-table">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h2">December 2019</p>
+    								<p>The Olympus team want to keep you updated on what we’re working on. So, we plan to start sharing an update at the start of every month. We hope you find it useful and we’d love to hear your questions and suggestions.</p>
+    								<br>
+    								<p>In the meantime, here’s a quick summary of what we did in November, and some insight into our plans for December.</p>
+    								<br>
+    								<hr>
+			    				</td>
+			    			</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+            <table class="main-table">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h2">Done in November ✅</p>
+    								<p class="h3">We significantly improved the form lead conversion rate of the buyer portal</p>
+                                    <p>After launching <a href="https://immoneuf.avito.ma/fr" target="_blank">Avito Immobilier Neuf</a> with the team in Casablanca in April this year, we were busy delivering some must-have components in the following 2 quarters, such as Search, Homepage, tools to support marketing, Client Portal and much more.</p>
+                                    <br>
+                                	<p>In Q4, we refocused our efforts on improving the performance of the buyer portal to drive more form leads to better satisfy our customers. The following chart shows the form lead conversion rate of the portal for organic traffic sources.</p>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image">
+			    					<img src="https://dl.dropboxusercontent.com/s/kuag01rgix1mgyq/cvr.png?dl=0">
+			    				</td>
+			    			</tr>
+    						<tr>
+    							<td class="inner-td">
+    								<p>To find out how we did this, read on ...</p>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h3">We updated the project detail page</p>
+                                    <p>Firstly we addressed some problems with our mobile experience, such as there not being enough key information above the fold, "construction status" &amp; "completion dates" not being clear enough, and that users were expecting the cover image to be “swipeable”.</p>
+                                    <br>
+                                    <p>However, we also removed the sticky contact bar at the bottom of the screen to make more space, but also to replace it with an inline "Contact" button, which drastically increased clicks to the form, which increased form leads.</p>
+                                    <br>
+                                    <p><b>Impact</b></p>
+                                    <ul>
+                                        <li><b>+20.5%</b> Form Lead CVR on project page</li>
+                                    	<li><b>+8.9%</b> increase in photo views</li>
+                                    </ul>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image">
+			    					<img src="https://dl.dropboxusercontent.com/s/wpo91bi031phcig/ppage.png?dl=0">
+			    				</td>
+			    			</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+                                    <p class="h3">We improved our listing card design in Search & Homepage</p>
+                                    <p>We fixed problems such as “empty-looking” cards and prices not being easy to spot, while improving CTR with use of primary colour in Project Names. We also enabled a two-column list format on the mobile homepage, which helped drive more users from the homepage to project pages.</p>
+                                    <br>
+                                    <p><b>Impact</b></p>
+                                    <ul>
+                                        <li><b>+16.7%</b> Featured Project CTR<br><i>(Overall funnel from homepage to project page +4.95%)</i></li>
+                                    	<li><b>+4.6%</b> increase in Search CTR</li>
+                                    </ul>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image">
+			    					<img src="https://dl.dropboxusercontent.com/s/4fr2vmkig8fv8tp/cards.png?dl=0">
+			    				</td>
+			    			</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h3">We added IP location targeting for Homepage Featured Projects</p>
+    								<p>We introduced IP location targeting for the Featured Projects module on the homepage so that buyers are shown projects near to them.</p>
+    								<br>
+                                    <p><b>Impact</b></p>
+                                    <ul>
+                                        <li><b>+25.3%</b> Featured Project CTR<br><i>+56.1% for non-Casablanca users (since there was almost a 50% chance of Casablanca content already appearing due to concentration of supply there)</i></li>
+                                    </ul>
+    								<p class="h3">We drastically increased form leads outside office hours!</p>
+                                    <p>We discovered that 63% of Call Clicks were happening outside of normal Monday-to-Friday working hours, when builders would be less available to take calls.</p>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image">
+			    					<img src="https://dl.dropboxusercontent.com/s/ivj571de4icawzz/ooh.png?dl=0">
+			    				</td>
+			    			</tr>
+    						<tr>
+    							<td class="inner-td">
+    								<p>With no call tracking solutions available in Morocco, we saw an opportunity to provide a different experience to buyers when builders’ offices are closed to encourage buyers to leave their contact details for a call-back - thus giving builders more high value form leads.</p>
+    								<br>
+    								<p>To test the hypothesis, we went simple and bold (!) by removing all phone numbers from ad views outside of office hours. The results were astounding...</p>
+    								<br>
+                                    <p><b>Impact</b></p>
+                                    <ul>
+                                        <li><b>+78%</b> Form Lead CVR (!!) on the detail pages.<br><i>(assuming the seller had a phone number)</i></li>
+                                    </ul>
+    								<p class="h3">We experimented with contact form fields</p>
+                                    <p>We experimented with removing non-essential contact form fields to boost conversion rate. We’re still reviewing the results but the indications are that we’re not seeing any positive impact with this change. Well… you can’t win them all! 😆</p>
+                                    <br>
+    								<hr>
+			    				</td>
+			    			</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+            <table class="main-table">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h2">Coming in December 🔜</p>
+                                    <p>December is a short month but there’s still lots of value we want to create if we can. Here are some of the main items we plan to deliver.</p>
+    								<p class="h3">Integrate Facebook Lead Ads with Olympus Leads Service</p>
+                                    <p>We’ll be supporting Avito’s efforts to drive more form leads for their new construction customers (even if they don’t happen on the Olympus portal) by integrating Facebook Lead Ads into the Olympus leads service so that they can be reported in the Olympus Client Portal.</p>
+    								<p class="h3">Test search ranking to support Avito 5Leads30</p>
+                                    <p>"5Leads30" is set of Avito initiatives designed to achieve an aggressive goal to generate 5 form leads per day to all new projects for the first 30 days. Many of our current initiatives are focused on this goal. We see an opportunity in search to focus traffic on projects that need extra help in getting to this target.</p>
+    								<p class="h3">Test contact CTAs & Forms in Search</p>
+                                    <p>Fotocasa generate 20% of their leads from their listings page. We’ll run an experiment to understand if a similar implementation will drive additional form leads or just redistribute/cannibalise those already occurring on the detail pages.</p>
+    								<p class="h3">Homepage module experimentation</p>
+                                    <p>We’ll continue to experiment with new homepage listings modules and module ordering to improve engagement from this key entry point.</p>
+    								<br>
+    								<hr>
+    								<br>
+    								<br>
+    								<p>Around the start of every month, we’ll share updates from the team and plans of what’s to come.</p>
+    								<br>
+									<p>Next time, we’ll also share more details on OKRs for Q1 2020 and the full year.</p>
+									<br>
+									<p>Please get in touch if there’s anything from the above that you’d like to learn more about or if there are things you think we should try out.</p>
+									<br>
+									<table>
+										<tr>
+											<td width="100">
+												<img src="https://dl.dropboxusercontent.com/s/vdzwsnc86pd95pw/james.png?dl=0" width="100" style="padding-right: 12px">
+											</td>
+											<td>
+												<p class="h3">James Gammon</p>
+                                    			<p>Olympus Product Mgmt</p>
+											</td>
+										</tr>
+									</table>
+
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr>
+            </table> <!--- End Main Table -->
+            <table class="outer-table-3">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="footer">
+    								<img src="https://dl.dropboxusercontent.com/s/izo2o9scjl7o8qc/olympus-logo.png?dl=0">
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr>
+    		</table> <!--- End Main Table -->
+    	</div> <!--- End Wrapper Inner -->
+    </div> <!--- End Wrapper -->
+    <br>
+</body>
+</html>
