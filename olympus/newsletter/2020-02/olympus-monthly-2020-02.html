@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+body {
+	margin: 0!important;
+/*	padding: 15px; */
+	background-color: #FFF;
+}
+.wrapper {
+	width: 100%;
+	table-layout: fixed;
+}
+.wrapper-inner {
+	width: 100%;
+	background-color: #fff;
+	max-width: 670px;
+	margin: 0 auto;
+}
+table {
+	border-spacing: 0;
+	font-family: Roboto,sans-serif;
+	color: #727f80;
+}
+.outer-table {
+	width: 100%;
+	max-width: 670px;
+	margin: 0 auto;
+	background-color: #FFF;
+}
+td {
+    padding: 0;
+}
+/*
+.header {
+    background-color: #C2C1C1;
+}
+*/
+p {
+    margin:0;
+}
+/*
+.header p {
+    text-align: center;
+    padding: 1%;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+*/
+a {
+    color: #FF6D69;
+    text-decoration: none;
+}
+/*--- End Outer Table 1 --*/
+
+/*--- Start Two Column Sections --*/
+.two-column {
+    text-align: center;
+    font-size: 0;
+    padding: 5px 0 10px 0;
+}
+.two-column .section {
+    width: 100%;
+    max-width: 300px; /* formerly 300 */
+    display: inline-block;
+    vertical-align: top;
+}
+.two-column .content {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+.content {
+    width: 100%;
+    padding-top: 20px;
+}
+.center {
+    display: table;
+    margin: 0 auto;
+}
+img {
+    border: 0;
+}
+img.logo {
+    float: left;
+    max-width: 150px!important;
+}
+#callout {
+    float: right;
+    margin: 4% 5% 2% 0;
+    height: auto;
+    overflow: hidden;
+}
+#callout img {
+    max-width: 20px;
+}
+.social {
+    list-style-type: none;
+    margin-top: 1%;
+    padding: 0;
+}
+.social li {
+    display: inline-block;
+}
+.social li img {
+    max-width: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/*--- Start Outer Table Banner Image, Text & Button --*/
+.image img {
+    width: 100%;
+    max-width: 670px;
+    height: auto;
+}
+.main-table {
+    width: 100%;
+    max-width: 610px;
+    margin: 0 auto;
+    background-color: #FFF;
+}
+.one-column .inner-td {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+.inner-td {
+    padding: 16px;
+}
+.h2 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 45px;
+    color: #2900D2;  /* 4A4A4A */
+    margin: 12px 0 12px 0;
+}
+p.center {
+    text-align: center;
+    max-width: 580px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+.button-holder-center {
+    text-align: center;
+    margin: 5% 2% 3% 0;
+}
+.button-holder {
+    float: right;
+    margin: 5% 0 3% 0;
+}
+.btn {
+    font-size: 15px;
+    font-weight: 600;
+    background: #81BAC6;
+    color: #FFF;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 28px;
+}
+/*--- Start Two Column Image & Text Sections --*/
+.two-column img {
+    width: 100%;
+    max-width: 280px; /* formerly 280 */
+    height: auto;
+}
+.two-column .text {
+    padding: 10px 0;
+}
+/*--- Start 3 Column Image & Text Section --*/
+.outer-table-2 {
+	width: 100%;
+	max-width: 670px;
+	margin: 22px auto;
+	background-color: #C2C1C1;
+    border-bottom: 3px solid #81B9C3;
+    border-top: 3px solid #81B9C3;
+}
+.three-column {
+    text-align: center;
+    font-size: 0;
+    padding: 10px 0 30px 0;
+}
+.three-column .section {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+.three-column .content {
+    font-size: 16px;
+    line-height: 20px;
+}
+.three-column img {
+    width: 100%;
+    max-width: 125px;
+    height: auto;
+}
+.outer-table-2 p {
+	margin-top: 6px;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 23px;
+}
+/*--- Start Two Column Article Section --*/
+.outer-table-3 {
+    width: 100%;
+    max-width: 670px;
+    margin: 22px auto;
+    background-color: #C2C1C1;
+    border-top: 1px solid #636363;
+}
+.h3 {
+	text-align: left;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 24px 0 8px 0;
+	color: #ff6d69;
+}
+/*--- Start Bottom One Column Section --*/
+.inner-bottom {
+	padding: 22px;
+}
+.h1 {
+    text-align: left;!important;
+    font-size: 25px!important;
+    font-weight: 600;
+    margin: 12px 0 12px 0;
+    color: #4A4A4A;
+}
+.inner-bottom p {
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+}
+/*--- Start Footer Section --*/
+.footer {
+	width: 100%;
+	background-color: #BDE2EA;
+	margin: 0 auto;
+    color: #FFF;
+}
+.footer  img {
+	max-width: 135px;
+	margin: 0 auto;
+	display: block;
+	padding: 4% 0 4% 0;
+}
+p.footer {
+	text-align: center;
+	color: #FFF!important;
+	line-height: 30px;
+	padding-bottom: 4%;
+    text-transform: uppercase;
+}
+/*--- Media Queries --*/
+@media screen and (max-width: 400px) {
+	.h1 {
+		font-size: 22px;
+	}
+	.two-column .column, .three-column .column {
+		max-width: 100%!important;
+	}
+	.two-column img {
+		width: 100%!important;
+	}
+	.three-column img {
+		max-width: 60%!important;
+	}
+}
+@media screen and (min-width: 401px) and (max-width: 400px) {
+
+	.two-column .column {
+		max-width: 50%!important;
+	}
+	.three-column .column {
+		max-width: 33%!important;
+}
+}
+@media screen and (max-width:768px) {
+img.logo {
+	float:left !important;
+	margin-left:0% !important;
+	max-width: 150px!important;
+}
+
+#callout {
+	float:none !important;
+	margin: 0% 0% 0% 0;
+	height: auto;
+	text-align:center;
+	overflow: hidden;
+}
+#callout img {
+    max-width:26px !important; 
+}
+.two-column .section {
+	width: 100% !important;
+	max-width: 100% !important;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.two-column img {
+	width: 100% !important;
+ 	height: auto !important;
+}
+img.img-responsive {
+    width:100% !important;
+    height:auto !important;
+    max-width:100% !important;
+}
+.content {
+	width: 100%;
+	padding-top:0px !important;
+}
+}
+</style>
+ </head>
+<body>
+    <div class="wrapper">
+    	<div class="wrapper-inner">
+            <table class="outer-table">
+    			<tbody>
+    				<tr>
+    					<td class="image">
+    						<img src="https://dl.dropboxusercontent.com/s/t4vq2ho3vnyycsg/cover-email.jpg?dl=0">
+    					</td>
+	    			</tr> <!--- End Banner -->
+    	        </tbody>
+        	</table>
+            <table class="main-table">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h2">February 2020</p>
+    								<p>From Pulse tagging to traffic recirculation, the Olympus team  hit the ground running in January. Here’s a quick summary of the progress we made last month.</p>
+    								<br>
+    								<hr>
+			    				</td>
+			    			</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+            <table class="main-table">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h2">Done in January ✅</p>
+    								<p class="h3">We implemented Pulse tagging on the Olympus portal</p>
+                                    <p>Until now, we’ve relied solely on tools such as Amplitude and Google Analytics for behavioural data analysis of the Olympus portals. These tools are still very important to us but so is the Business Intelligence Convergence (BIC) initiative. Now we will be able to provide easier access to the key facts and data about the Olympus platform to the business as a whole.</p>
+    								<br>
+                                    <p>We're now working closely with the Superglue team to build new Olympus dashboards to replace the ones we generate manually for Avito each week.</p>
+    								<br>
+    								<p>It doesn’t end here though. We have OKRs to meet coverage & fidelity targets for both behavioural and content data but it’s a great start to the quarter!</p>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h3">We’re getting more value out of externally driven traffic to Project detail pages</p>
+                                    <p>We noticed that users who landed on Project Detail Pages from external traffic sources, such as SEO, Facebook or Google ad campaigns etc, were far less likely to explore other projects than those entering through the home or listings pages. Since this is a significant portion of our traffic, we saw an opportunity to optimise for this.</p>
+                                    <br>
+                                	<p>We’re currently experimenting with a new “See More” button for these use cases, which invites users to the listings page so they can see more projects for the same location.</p>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image">
+			    					<img src="https://dl.dropboxusercontent.com/s/8y29jyjgiysf6k7/2020-02-seemore.png?dl=0">
+			    				</td>
+			    			</tr>
+    						<tr>
+    							<td class="inner-td">
+                                    <p><b>IMPACT</b></p>
+                                    <br>
+                                    <p>The results from this experiment look promising. It's producing the expected results in terms of getting these users to explore other content and there are indications (though not yet statistically significant) that it's driving additional leads as a result.</p>
+                                    <ul>
+                                        <li><b>+52%</b> increase in users navigating to Listings page from Project “Landing” Page</li>
+                                    </ul>
+                                    <p>Although this increase looks significant, the baseline in absolute terms is still quite low (we went from 1.4% to 2.1%). So, as long as we feel confident that it doesn’t have a negative impact on leads on the landing project page, we will look to increase this further with more optmisation.</p>
+                                    <br>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+                                    <p class="h3">We rolled out some new SEO optimisations</p>
+                                    <p>We have an OKR to <b>double</b> our SEO traffic run-rate this quarter. Most of our SEO traffic comes when users search Google for specific projects. It’s high quality traffic that converts well but it’s relatively low volume. We believe our best chance of achieving our OKR is by improving the SEO performance of our listings page.</p>
+                                    <br>
+                                    <p>What we’ve done so far:</p>
+                                    <ul>
+                                        <li>We added new SEO links to the footers on the home and detail pages</li>
+                                    	<li>We removed duplicate project content from unit pages (unit page optimisation)</li>
+                                    	<li>We fixed a bug with canonical URLs on the listings page</li>
+                                    </ul>
+                                    <p>These initiatives were launched late in January so we’ll provide a further update next month on the <b>impact</b> they’ve had. We also have other initiatives lined up and so we’ll keep you posted on those too!</p>
+                                    <br>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h3">We’ve had success with 5Leads30 listings ranking</p>
+    								<p>Last month I spoke about a ranking experiment designed to support Avito’s 5Leads30 goal (to generate an average of 5 daily form leads for all new projects in their first 30 days). We weren’t seeing the results we were hoping for and it turned out to be a bug 🤦</p>
+    								<br>
+    								<p>Since we fixed that bug on 21 Jan, we started to see the impact we expected 🙌</p>
+                                    <br>
+                                    <p><b>IMPACT</b></p>
+                                    <br>
+                                    <ul>
+                                        <li><b>+61%</b> increase in Listing CTR on projects published <30 days ago</li>
+                                        <li>Overall listings CTR is up slightly by +6%, although this isn’t yet statistically significant. However, the trends suggest that it’s not negatively impacting the overall performance.</li>
+                                    </ul>
+                                    <p>These are good results but in order to make the impact more meaningful to 5Leads30, we need to increase search volume significantly. We’re working on it!</p>
+                                    <br>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h3">Olympus portal conversion rates are holding firm</p>
+    								<p>While we haven’t started work on any new conversion rate drivers yet in Q1, we did rollout Contact Forms in Search to 100% of users on 3 Jan (reported in last month's update). This is helping towards our OKR to increase Organic CVR by +30% this quarter.</p>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image">
+			    					<img src="https://dl.dropboxusercontent.com/s/axwftihr72fuama/2020-02-cvr.png?dl=0">
+			    				</td>
+			    			</tr>
+    						<tr>
+    							<td class="inner-td">
+    								<p>Stay tuned on this one. We have more work to do before we achieve this OKR.</p>
+                                    <br>
+                                    <hr>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h3">Some honorable mentions...</p>
+                                    <ul>
+                                        <li>We made some changes to the content feeds we provide to Avito Marketing to help them better target projects in their first 30 days since publication. This was to support Avito’s 5Leads30 OKR.</li>
+                                        <li>We provided Avito with the ability to manage their own Client Portal user access so that they’re able to get their clients set up faster, thus increasing client satisfaction.</li>
+                                        <li>We identified and addressed an issue with a large client’s custom CRM integration with our leads service.</li>
+                                    </ul>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+            <table class="main-table">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h2">To come in February 🔜</p>
+                                    <p>One of our primary objectives this quarter is to help increase the profitability of Avito Immobilier Neuf - both by increasing organic traffic and by generating leads more efficiently. This coming month we’re hoping to make progress on the following initiatives.</p>
+    								<p class="h3">Organic traffic initiatives</p>
+                                    <ul>
+                                        <li>Sharing feature on Project and Unit detail pages</li>
+                                        <li>Recommender carousel on Avito.ma to drive traffic to Avito Immobilier Neuf</li>
+                                        <li>Subscribe to search alerts</li>
+                                        <li>SEO: Improve search H1 text</li>
+                                        <li>SEO: Introduce Dynamic Rendering to preserve SSH when running experiments</li>
+                                    </ul>
+    								<p class="h3">Lead gen efficiency initiatives</p>
+                                    <ul>
+                                        <li>Contact form optimisation</li>
+                                        <li>Search history suggestions</li>
+                                        <li>Search from Project & Unit detail pages</li>
+                                    </ul>
+    								<br>
+                                    <p>In addition, we hope to make good progress on our 3rd objective with a plan to understand our buyer needs and problems better. We hope to provide an update on this next month. You can see a full list of our Q1 OKRs <a href="https://docs.google.com/document/d/1j2rBMhjjnODnFx9anFoBp9PQ2iJ3y-XpsL5cCLYepnU/edit?usp=sharing">here</a>.</p>
+    								<br>
+    								<hr>
+    								<br>
+    								<br>
+									<p>That’s all for this month. As always, we love to hear your feedback and answer any questions you might have. For any new readers who’d like to see previous updates, here’s our small (but gradually growing) archive 😁</p>
+                                    <ul>
+                                        <li><a href="https://gammonj.github.io/olympus/newsletter/2020-01/olympus-monthly-2020-01.html">2020: January</a></li>
+                                        <li><a href="https://gammonj.github.io/olympus/newsletter/2019-12/olympus-monthly-2019-12.html">2019: December</a></li>
+                                    </ul>
+									<br>
+									<table>
+										<tr>
+											<td width="100">
+												<img src="https://dl.dropboxusercontent.com/s/vdzwsnc86pd95pw/james.png?dl=0" width="100" style="padding-right: 12px">
+											</td>
+											<td>
+												<p class="h3">James Gammon</p>
+                                    			<p>Olympus Product Mgmt</p>
+											</td>
+										</tr>
+									</table>
+
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr>
+            </table> <!--- End Main Table -->
+            <table class="outer-table-3">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="footer">
+    								<img src="https://dl.dropboxusercontent.com/s/izo2o9scjl7o8qc/olympus-logo.png?dl=0">
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr>
+    		</table> <!--- End Main Table -->
+    	</div> <!--- End Wrapper Inner -->
+    </div> <!--- End Wrapper -->
+    <br>
+</body>
+</html>
