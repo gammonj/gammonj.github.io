@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+body {
+	margin: 0!important;
+/*	padding: 15px; */
+	background-color: #FFF;
+}
+.wrapper {
+	width: 100%;
+	table-layout: fixed;
+}
+.wrapper-inner {
+	width: 100%;
+	background-color: #fff;
+	max-width: 670px;
+	margin: 0 auto;
+}
+table {
+	border-spacing: 0;
+	font-family: Roboto,sans-serif;
+	color: #727f80;
+}
+.outer-table {
+	width: 100%;
+	max-width: 670px;
+	margin: 0 auto;
+	background-color: #FFF;
+}
+td {
+    padding: 0;
+}
+/*
+.header {
+    background-color: #C2C1C1;
+}
+*/
+p {
+    margin:0;
+}
+/*
+.header p {
+    text-align: center;
+    padding: 1%;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+*/
+a {
+    color: #FF6D69;
+    text-decoration: none;
+}
+/*--- End Outer Table 1 --*/
+
+/*--- Start Two Column Sections --*/
+.two-column {
+    text-align: center;
+    font-size: 0;
+    padding: 5px 0 10px 0;
+}
+.two-column .section {
+    width: 100%;
+    max-width: 300px; /* formerly 300 */
+    display: inline-block;
+    vertical-align: top;
+}
+.two-column .content {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+.content {
+    width: 100%;
+    padding-top: 20px;
+}
+.center {
+    display: table;
+    margin: 0 auto;
+}
+img {
+    border: 0;
+}
+img.logo {
+    float: left;
+    max-width: 150px!important;
+}
+#callout {
+    float: right;
+    margin: 4% 5% 2% 0;
+    height: auto;
+    overflow: hidden;
+}
+#callout img {
+    max-width: 20px;
+}
+.social {
+    list-style-type: none;
+    margin-top: 1%;
+    padding: 0;
+}
+.social li {
+    display: inline-block;
+}
+.social li img {
+    max-width: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/*--- Start Outer Table Banner Image, Text & Button --*/
+.image img {
+    width: 100%;
+    max-width: 670px;
+    height: auto;
+}
+.main-table {
+    width: 100%;
+    max-width: 610px;
+    margin: 0 auto;
+    background-color: #FFF;
+}
+.one-column .inner-td {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+.inner-td {
+    padding: 16px;
+}
+.h2 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+    color: #2900D2;  /* 4A4A4A */
+    margin: 12px 0 12px 0;
+}
+p.center {
+    text-align: center;
+    max-width: 580px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+.button-holder-center {
+    text-align: center;
+    margin: 5% 2% 3% 0;
+}
+.button-holder {
+    float: right;
+    margin: 5% 0 3% 0;
+}
+.btn {
+    font-size: 15px;
+    font-weight: 600;
+    background: #81BAC6;
+    color: #FFF;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 28px;
+}
+/*--- Start Two Column Image & Text Sections --*/
+.two-column img {
+    width: 100%;
+    max-width: 280px; /* formerly 280 */
+    height: auto;
+}
+.two-column .text {
+    padding: 10px 0;
+}
+/*--- Start 3 Column Image & Text Section --*/
+.outer-table-2 {
+	width: 100%;
+	max-width: 670px;
+	margin: 22px auto;
+	background-color: #C2C1C1;
+    border-bottom: 3px solid #81B9C3;
+    border-top: 3px solid #81B9C3;
+}
+.three-column {
+    text-align: center;
+    font-size: 0;
+    padding: 10px 0 30px 0;
+}
+.three-column .section {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+.three-column .content {
+    font-size: 16px;
+    line-height: 20px;
+}
+.three-column img {
+    width: 100%;
+    max-width: 125px;
+    height: auto;
+}
+.outer-table-2 p {
+	margin-top: 6px;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 23px;
+}
+/*--- Start Two Column Article Section --*/
+.outer-table-3 {
+    width: 100%;
+    max-width: 670px;
+    margin: 22px auto;
+    background-color: #C2C1C1;
+    border-top: 1px solid #636363;
+}
+.h3 {
+	text-align: left;
+	font-size: 20px;
+	font-weight: 600;
+	margin: 24px 0 8px 0;
+	color: #ff6d69;
+}
+/*--- Start Bottom One Column Section --*/
+.inner-bottom {
+	padding: 22px;
+}
+.h1 {
+    text-align: left;!important;
+    font-size: 25px!important;
+    font-weight: 600;
+    margin: 12px 0 12px 0;
+    color: #4A4A4A;
+}
+.inner-bottom p {
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+}
+/*--- Start Footer Section --*/
+.footer {
+	width: 100%;
+	background-color: #BDE2EA;
+	margin: 0 auto;
+    color: #FFF;
+}
+.footer  img {
+	max-width: 135px;
+	margin: 0 auto;
+	display: block;
+	padding: 4% 0 4% 0;
+}
+p.footer {
+	text-align: center;
+	color: #FFF!important;
+	line-height: 30px;
+	padding-bottom: 4%;
+    text-transform: uppercase;
+}
+/*--- Media Queries --*/
+@media screen and (max-width: 400px) {
+	.h1 {
+		font-size: 22px;
+	}
+	.two-column .column, .three-column .column {
+		max-width: 100%!important;
+	}
+	.two-column img {
+		width: 100%!important;
+	}
+	.three-column img {
+		max-width: 60%!important;
+	}
+}
+@media screen and (min-width: 401px) and (max-width: 400px) {
+
+	.two-column .column {
+		max-width: 50%!important;
+	}
+	.three-column .column {
+		max-width: 33%!important;
+}
+}
+@media screen and (max-width:768px) {
+img.logo {
+	float:left !important;
+	margin-left:0% !important;
+	max-width: 150px!important;
+}
+
+#callout {
+	float:none !important;
+	margin: 0% 0% 0% 0;
+	height: auto;
+	text-align:center;
+	overflow: hidden;
+}
+#callout img {
+    max-width:26px !important; 
+}
+.two-column .section {
+	width: 100% !important;
+	max-width: 100% !important;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.two-column img {
+	width: 100% !important;
+ 	height: auto !important;
+}
+img.img-responsive {
+    width:100% !important;
+    height:auto !important;
+    max-width:100% !important;
+}
+.content {
+	width: 100%;
+	padding-top:0px !important;
+}
+}
+</style>
+</head>
+<body style="background-color: #FFF;margin: 0!important;">
+    <div class="wrapper" style="width: 100%;table-layout: fixed;">
+    	<div class="wrapper-inner" style="width: 100%;background-color: #fff;max-width: 670px;margin: 0 auto;">
+            <table class="outer-table" style="border-spacing: 0;font-family: Roboto,sans-serif;color: #727f80;width: 100%;max-width: 670px;margin: 0 auto;background-color: #FFF;">
+    			<tbody>
+    				<tr>
+    					<td class="image" style="padding: 0;">
+    						<img src="https://dl.dropboxusercontent.com/s/t4vq2ho3vnyycsg/cover-email.jpg?dl=0" style="border: 0;width: 100%;max-width: 670px;height: auto;">
+    					</td>
+	    			</tr> <!--- End Banner -->
+    	        </tbody>
+        	</table>
+            <table class="main-table" style="border-spacing: 0;font-family: Roboto,sans-serif;color: #727f80;width: 100%;max-width: 610px;margin: 0 auto;background-color: #FFF;">
+    			<tr>
+    				<td class="one-column" style="padding: 0;">
+    					<table width="100%" style="border-spacing: 0;font-family: Roboto,sans-serif;color: #727f80;">
+    						<tr>
+    							<td class="inner-td" style="padding: 16px;font-size: 16px;line-height: 20px;text-align: left;">
+    								<p class="h2" style="margin: 12px 0 12px 0;text-align: left;font-size: 24px;font-weight: 500;line-height: 45px;color: #2900D2;">April 2020</p>
+    								<p style="margin: 0;">To say that it’s been a turbulent month just doesn’t do it justice. However, despite the drop in DAUs in the last few weeks, we've seen tremendous progress in Q1.</p>
+    								<br>
+    								<p style="margin: 0;">For more information, read on...</p>
+    								<br>
+    								<hr>
+			    				</td>
+			    			</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    		</table>
+            <table class="main-table" style="border-spacing: 0;font-family: Roboto,sans-serif;color: #727f80;width: 100%;max-width: 610px;margin: 0 auto;background-color: #FFF;">
+    			<tr>
+    				<td class="one-column" style="padding: 0;">
+    					<table width="100%" style="border-spacing: 0;font-family: Roboto,sans-serif;color: #727f80;">
+    						<tr>
+    							<td class="inner-td" style="padding: 16px;font-size: 16px;line-height: 20px;text-align: left;">
+    								<p class="h2" style="margin: 12px 0 12px 0;text-align: left;font-size: 24px;font-weight: 500;line-height: 45px;color: #2900D2;">Q1 OKRs Summary 📈</p>
+    								<p class="h3" style="margin: 24px 0 8px 0;text-align: left;font-size: 20px;font-weight: 600;color: #ff6d69;">OKR1.1 Increase Avito monthly organic leads run-rate by +100% from 934 to 1,868</p>
+                                    <p style="margin: 0;">We were so close! Through combined efforts by Olympus and Avito teams, <b>we increased the organic form-lead run-rate by +69%</b> before COVID-19 started to impact DAUs.</p>
+                                    <br>
+                                    <p style="margin: 0;">We think the weekly trend graph says it all. With the “Request Brochure” feature we launched two weeks ago (see further down for info), we’re sure we would have made it had the DAUs not dropped. In fact, even with the drop we’ve seen in the last few weeks, Avito <b>organic form-leads were up +25% last week vs the beginning of January with -27% fewer users!</b></p>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image" style="padding: 0;">
+			    					<img src="https://dl.dropboxusercontent.com/s/6vbicllmvdk5f0h/2020-04-organic-leads.png?dl=0" style="border: 0;width: 100%;max-width: 670px;height: auto;">
+			    				</td>
+			    			</tr>
+    						<tr>
+    							<td class="inner-td" style="padding: 16px;font-size: 16px;line-height: 20px;text-align: left;">
+    								<p class="h3" style="margin: 24px 0 8px 0;text-align: left;font-size: 20px;font-weight: 600;color: #ff6d69;">OKR1.2 Increase Avito monthly Google SEO visits run-rate by +100% from 2,387 to 4,774</p>
+                                    <p style="margin: 0;">This one has been exceptionally tough. We’ve seen progress, then setbacks but we continue to work on this and have more initiatives we plan to try in Q2.</p>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image" style="padding: 0;">
+			    					<img src="https://dl.dropboxusercontent.com/s/8zu9e9c5facv3m2/2020-04-seo-clicks.png?dl=0" style="border: 0;width: 100%;max-width: 670px;height: auto;">
+			    				</td>
+			    			</tr>
+    						<tr>
+    							<td class="inner-td" style="padding: 16px;font-size: 16px;line-height: 20px;text-align: left;">
+    								<p class="h3" style="margin: 24px 0 8px 0;text-align: left;font-size: 20px;font-weight: 600;color: #ff6d69;">OKR2.1 Increase organic form lead conversion rate by +30% from 0.884% to 1.149%</p>
+                                    <p style="margin: 0;">We smashed it! 😄 We expected this uplift following a successful AB test and launch of the Brochure Request feature so we’re very confident these rates will hold when DAUs start to increase again.</p>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image" style="padding: 0;">
+			    					<img src="https://dl.dropboxusercontent.com/s/takaxntixv28vz3/2020-04-cvr.png?dl=0" style="border: 0;width: 100%;max-width: 670px;height: auto;">
+			    				</td>
+			    			</tr>
+    					</table>
+    				</td>
+    			</tr>
+            </table> <!--- End Main Table -->
+            <table class="main-table" style="border-spacing: 0;font-family: Roboto,sans-serif;color: #727f80;width: 100%;max-width: 610px;margin: 0 auto;background-color: #FFF;">
+    			<tr>
+    				<td class="one-column" style="padding: 0;">
+    					<table width="100%" style="border-spacing: 0;font-family: Roboto,sans-serif;color: #727f80;">
+    						<tr>
+    							<td class="inner-td" style="padding: 16px;font-size: 16px;line-height: 20px;text-align: left;">
+    								<p class="h2" style="margin: 12px 0 12px 0;text-align: left;font-size: 24px;font-weight: 500;line-height: 45px;color: #2900D2;">Done in March ✅</p>
+    								<p class="h3" style="margin: 24px 0 8px 0;text-align: left;font-size: 20px;font-weight: 600;color: #ff6d69;">We created a Request/Download Brochure CTA</p>
+    								<p style="margin: 0;"><i><small>OKR: Increase Avito monthly organic leads run-rate by +100% from 934 to 1,868</small></i></p>
+    								<br>
+                                    <p style="margin: 0;">We have Elodie Gueho from LBC to thank for this one. Although we offer the ability for builders to add a brochure to their project ads, only 10% currently have done. So we borrowed an idea from LBC to enable buyers to request one as a way of expressing their interest in the project.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="image" style="padding: 0;">
+                                    <img src="https://dl.dropboxusercontent.com/s/wqscc5yzow2zxex/2020-04-request-brochure.png?dl=0" style="border: 0;width: 100%;max-width: 670px;height: auto;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="inner-td" style="padding: 16px;font-size: 16px;line-height: 20px;text-align: left;">
+                                    <p style="margin: 0;"><b>IMPACT</b></p>
+                                    <br>
+                                    <p style="margin: 0;">You've already seen the conversion rate trends above! The AB test results were conducted before COVID-19 started to impact the Moroccan market and they were fantastic.</p>
+                                    <ul>
+                                        <li>Form lead CVR on detail pages were <b>up +59%</b> across all user segments.</li>
+                                    </ul>
+                                    <p style="margin: 0;">The Request Brochure CTA is now the biggest driver of form leads. We plan to expand on this idea in Q2 help buyers express their contact <i>reasons</i> more easily. We also see this as an opportunity for builders to be able to segment and prioritise their leads.</p>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column" style="padding: 0;">
+    					<table width="100%" style="border-spacing: 0;font-family: Roboto,sans-serif;color: #727f80;">
+    						<tr>
+    							<td class="inner-td" style="padding: 16px;font-size: 16px;line-height: 20px;text-align: left;">
+    								<p class="h3" style="margin: 24px 0 8px 0;text-align: left;font-size: 20px;font-weight: 600;color: #ff6d69;">We launched “inactive detail pages”</p>
+    								<p style="margin: 0;"><i><small>OKR: Increase Avito monthly Google SEO visits run-rate by +100% from 2,387 to 4,774</small></i></p>
+    								<br>
+                                    <p style="margin: 0;">We have Esteve Castells and Shpock to thank for this one (are you spotting a theme here? 🙂).</p>
+                                    <br>
+                                    <p style="margin: 0;">Promoting a new project is a process that can last multiple years, so new construction ad detail pages have staying power, which is great for SEO traffic to these pages. However, if a client churns and we return a 404, Google Search delists the ad and we lose the traffic.</p>
+                                    <br>
+                                    <p style="margin: 0;">In March, we stopped returning a 404-like behaviour and continued to serve the ad but with contact features removed and links to nearby projects.</p>
+                                    <br>
+                                    <p style="margin: 0;">You can see an example <a href="https://immoneuf.avito.ma/fr/d/melliber-jq4/residence-melliber-casablanca-bourgogne-jqD" style="color: #FF6D69;text-decoration: none;">here</a>.</p>
+                                    <br>
+                                    <p style="margin: 0;"><b>IMPACT</b></p>
+                                    <br>
+                                    <p style="margin: 0;">We’re still monitoring this one. By making this change, Google is no longer considering these URLs 404s and we’re starting to see traffic on them. Those ads that were previously delisted haven’t yet regained their former rank position in Google but we’re interested to see how current ads that now get unpublished have their rank impacted.</p>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image" style="padding: 0;">
+			    					<img src="https://dl.dropboxusercontent.com/s/jcb0rhc4ish4z4b/2020-04-seo-valid-urls.png?dl=0" style="border: 0;width: 100%;max-width: 670px;height: auto;">
+			    				</td>
+			    			</tr>
+    						<tr>
+    							<td class="inner-td" style="padding: 16px;font-size: 16px;line-height: 20px;text-align: left;">
+                                    <p style="margin: 0;">Obviously, the current situation has impacted overall SEO traffic so we’ll have to see how this one pans out!</p>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    		</table>
+            <table class="main-table" style="border-spacing: 0;font-family: Roboto,sans-serif;color: #727f80;width: 100%;max-width: 610px;margin: 0 auto;background-color: #FFF;">
+    			<tr>
+    				<td class="one-column" style="padding: 0;">
+    					<table width="100%" style="border-spacing: 0;font-family: Roboto,sans-serif;color: #727f80;">
+    						<tr>
+    							<td class="inner-td" style="padding: 16px;font-size: 16px;line-height: 20px;text-align: left;">
+    								<p class="h2" style="margin: 12px 0 12px 0;text-align: left;font-size: 24px;font-weight: 500;line-height: 45px;color: #2900D2;">To come in Q2 🔜</p>
+                                    <p style="margin: 0;">Yesterday we had our Q2 PEAK Handshake and here’s the final output:</p>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image" style="padding: 0;">
+			    					<img src="https://dl.dropboxusercontent.com/s/9yryon253apl690/2020-04-q2-okrs.png?dl=0" style="border: 0;width: 100%;max-width: 670px;height: auto;">
+			    				</td>
+			    			</tr>
+    						<tr>
+    							<td class="inner-td" style="padding: 16px;font-size: 16px;line-height: 20px;text-align: left;">
+                                    <p style="margin: 0;">Due to the turbulence in March, like many other teams, we’ve switched from an impact to an initiative set of OKRs. In fact, several of our OKRs are themes as we still want to focus on moving KPIs and initiatives can change according to what we believe will drive the most impact. Don’t worry, we’ll still be very impact focused, even if the OKRs aren’t articulated that way.</p>
+                                    <br>
+                                    <p style="margin: 0;">Our primary areas of focus will be:</p>
+                                    <ol>
+                                        <li>Helping Fincaraiz launch a successful trial in Colombia</li>
+                                        <li>Growing Avito DAUs by working on more initiatives that <i>deliver value</i> to buyers rather than <i>capturing value</i> from them</li>
+                                        <li>Growing Avito DAUs by improving integration with Avito and by making further SEO improvements</li>
+                                        <li>Improving Avito seller acquisition and retention by expanding and improving our Seller Tools</li>
+                                    </ol>
+    								<br>
+	   								<hr>
+    								<br>
+    								<br>
+									<p style="margin: 0;">We look forward to keeping you updated on our Q2 progress! As always, you can see prior updates below and do let me know if there are any questions.</p>
+                                    <ul>
+                                        <li><a href="https://gammonj.github.io/olympus/newsletter/2020-03/olympus-monthly-2020-03.html" style="color: #FF6D69;text-decoration: none;">2020: March</a></li>
+                                        <li><a href="https://gammonj.github.io/olympus/newsletter/2020-02/olympus-monthly-2020-02.html" style="color: #FF6D69;text-decoration: none;">2020: February</a></li>
+                                        <li><a href="https://gammonj.github.io/olympus/newsletter/2020-01/olympus-monthly-2020-01.html" style="color: #FF6D69;text-decoration: none;">2020: January</a></li>
+                                        <li><a href="https://gammonj.github.io/olympus/newsletter/2019-12/olympus-monthly-2019-12.html" style="color: #FF6D69;text-decoration: none;">2019: December</a></li>
+                                    </ul>
+									<p style="margin: 0;">Until next time!</p>
+									<br>
+									<br>
+									<table style="border-spacing: 0;font-family: Roboto,sans-serif;color: #727f80;">
+										<tr>
+											<td width="100" style="padding: 0;">
+												<img src="https://dl.dropboxusercontent.com/s/vdzwsnc86pd95pw/james.png?dl=0" width="100" style="padding-right: 12px;border: 0;">
+											</td>
+											<td style="padding: 0;">
+												<p class="h3" style="margin: 24px 0 8px 0;text-align: left;font-size: 20px;font-weight: 600;color: #ff6d69;">James Gammon</p>
+                                    			<p style="margin: 0;">Olympus Product Mgmt</p>
+											</td>
+										</tr>
+									</table>
+
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr>
+            </table> <!--- End Main Table -->
+            <table class="outer-table-3" style="border-spacing: 0;font-family: Roboto,sans-serif;color: #727f80;width: 100%;max-width: 670px;margin: 22px auto;background-color: #C2C1C1;border-top: 1px solid #636363;">
+    			<tr>
+    				<td class="one-column" style="padding: 0;">
+    					<table width="100%" style="border-spacing: 0;font-family: Roboto,sans-serif;color: #727f80;">
+    						<tr>
+    							<td class="footer" style="padding: 0;width: 100%;background-color: #BDE2EA;margin: 0 auto;color: #FFF;">
+    								<img src="https://dl.dropboxusercontent.com/s/izo2o9scjl7o8qc/olympus-logo.png?dl=0" style="border: 0;max-width: 135px;margin: 0 auto;display: block;padding: 4% 0 4% 0;">
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr>
+    		</table> <!--- End Main Table -->
+    	</div> <!--- End Wrapper Inner -->
+    </div> <!--- End Wrapper -->
+    <br>
+</body>
+</html>
