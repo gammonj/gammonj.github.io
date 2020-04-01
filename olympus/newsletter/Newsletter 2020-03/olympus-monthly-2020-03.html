@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+body {
+	margin: 0!important;
+/*	padding: 15px; */
+	background-color: #FFF;
+}
+.wrapper {
+	width: 100%;
+	table-layout: fixed;
+}
+.wrapper-inner {
+	width: 100%;
+	background-color: #fff;
+	max-width: 670px;
+	margin: 0 auto;
+}
+table {
+	border-spacing: 0;
+	font-family: Roboto,sans-serif;
+	color: #727f80;
+}
+.outer-table {
+	width: 100%;
+	max-width: 670px;
+	margin: 0 auto;
+	background-color: #FFF;
+}
+td {
+    padding: 0;
+}
+/*
+.header {
+    background-color: #C2C1C1;
+}
+*/
+p {
+    margin:0;
+}
+/*
+.header p {
+    text-align: center;
+    padding: 1%;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+*/
+a {
+    color: #FF6D69;
+    text-decoration: none;
+}
+/*--- End Outer Table 1 --*/
+
+/*--- Start Two Column Sections --*/
+.two-column {
+    text-align: center;
+    font-size: 0;
+    padding: 5px 0 10px 0;
+}
+.two-column .section {
+    width: 100%;
+    max-width: 300px; /* formerly 300 */
+    display: inline-block;
+    vertical-align: top;
+}
+.two-column .content {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+.content {
+    width: 100%;
+    padding-top: 20px;
+}
+.center {
+    display: table;
+    margin: 0 auto;
+}
+img {
+    border: 0;
+}
+img.logo {
+    float: left;
+    max-width: 150px!important;
+}
+#callout {
+    float: right;
+    margin: 4% 5% 2% 0;
+    height: auto;
+    overflow: hidden;
+}
+#callout img {
+    max-width: 20px;
+}
+.social {
+    list-style-type: none;
+    margin-top: 1%;
+    padding: 0;
+}
+.social li {
+    display: inline-block;
+}
+.social li img {
+    max-width: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/*--- Start Outer Table Banner Image, Text & Button --*/
+.image img {
+    width: 100%;
+    max-width: 670px;
+    height: auto;
+}
+.main-table {
+    width: 100%;
+    max-width: 610px;
+    margin: 0 auto;
+    background-color: #FFF;
+}
+.one-column .inner-td {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+.inner-td {
+    padding: 16px;
+}
+.h2 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+    color: #2900D2;  /* 4A4A4A */
+    margin: 12px 0 12px 0;
+}
+p.center {
+    text-align: center;
+    max-width: 580px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+.button-holder-center {
+    text-align: center;
+    margin: 5% 2% 3% 0;
+}
+.button-holder {
+    float: right;
+    margin: 5% 0 3% 0;
+}
+.btn {
+    font-size: 15px;
+    font-weight: 600;
+    background: #81BAC6;
+    color: #FFF;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 28px;
+}
+/*--- Start Two Column Image & Text Sections --*/
+.two-column img {
+    width: 100%;
+    max-width: 280px; /* formerly 280 */
+    height: auto;
+}
+.two-column .text {
+    padding: 10px 0;
+}
+/*--- Start 3 Column Image & Text Section --*/
+.outer-table-2 {
+	width: 100%;
+	max-width: 670px;
+	margin: 22px auto;
+	background-color: #C2C1C1;
+    border-bottom: 3px solid #81B9C3;
+    border-top: 3px solid #81B9C3;
+}
+.three-column {
+    text-align: center;
+    font-size: 0;
+    padding: 10px 0 30px 0;
+}
+.three-column .section {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+.three-column .content {
+    font-size: 16px;
+    line-height: 20px;
+}
+.three-column img {
+    width: 100%;
+    max-width: 125px;
+    height: auto;
+}
+.outer-table-2 p {
+	margin-top: 6px;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 23px;
+}
+/*--- Start Two Column Article Section --*/
+.outer-table-3 {
+    width: 100%;
+    max-width: 670px;
+    margin: 22px auto;
+    background-color: #C2C1C1;
+    border-top: 1px solid #636363;
+}
+.h3 {
+	text-align: left;
+	font-size: 20px;
+	font-weight: 600;
+	margin: 24px 0 8px 0;
+	color: #ff6d69;
+}
+/*--- Start Bottom One Column Section --*/
+.inner-bottom {
+	padding: 22px;
+}
+.h1 {
+    text-align: left;!important;
+    font-size: 25px!important;
+    font-weight: 600;
+    margin: 12px 0 12px 0;
+    color: #4A4A4A;
+}
+.inner-bottom p {
+	font-size: 16px;
+	line-height: 24px;
+	text-align: left;
+}
+/*--- Start Footer Section --*/
+.footer {
+	width: 100%;
+	background-color: #BDE2EA;
+	margin: 0 auto;
+    color: #FFF;
+}
+.footer  img {
+	max-width: 135px;
+	margin: 0 auto;
+	display: block;
+	padding: 4% 0 4% 0;
+}
+p.footer {
+	text-align: center;
+	color: #FFF!important;
+	line-height: 30px;
+	padding-bottom: 4%;
+    text-transform: uppercase;
+}
+/*--- Media Queries --*/
+@media screen and (max-width: 400px) {
+	.h1 {
+		font-size: 22px;
+	}
+	.two-column .column, .three-column .column {
+		max-width: 100%!important;
+	}
+	.two-column img {
+		width: 100%!important;
+	}
+	.three-column img {
+		max-width: 60%!important;
+	}
+}
+@media screen and (min-width: 401px) and (max-width: 400px) {
+
+	.two-column .column {
+		max-width: 50%!important;
+	}
+	.three-column .column {
+		max-width: 33%!important;
+}
+}
+@media screen and (max-width:768px) {
+img.logo {
+	float:left !important;
+	margin-left:0% !important;
+	max-width: 150px!important;
+}
+
+#callout {
+	float:none !important;
+	margin: 0% 0% 0% 0;
+	height: auto;
+	text-align:center;
+	overflow: hidden;
+}
+#callout img {
+    max-width:26px !important; 
+}
+.two-column .section {
+	width: 100% !important;
+	max-width: 100% !important;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.two-column img {
+	width: 100% !important;
+ 	height: auto !important;
+}
+img.img-responsive {
+    width:100% !important;
+    height:auto !important;
+    max-width:100% !important;
+}
+.content {
+	width: 100%;
+	padding-top:0px !important;
+}
+}
+</style>
+ </head>
+<body>
+    <div class="wrapper">
+    	<div class="wrapper-inner">
+            <table class="outer-table">
+    			<tbody>
+    				<tr>
+    					<td class="image">
+    						<img src="https://dl.dropboxusercontent.com/s/t4vq2ho3vnyycsg/cover-email.jpg?dl=0">
+    					</td>
+	    			</tr> <!--- End Banner -->
+    	        </tbody>
+        	</table>
+            <table class="main-table">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h2">March 2020</p>
+    								<p>With just one month to go before the end of the quarter, we’re pressing hard to achieve our Q1 OKRs. We have a couple of “moon shot” ones in there and much of our focus will be on those during March (namely doubling both Avito’s organic lead volumes and traffic from SEO). But first, let’s take a look at what we achieved last month.</p>
+    								<br>
+    								<hr>
+			    				</td>
+			    			</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+            <table class="main-table">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h2">Done in February ✅</p>
+    								<p class="h3">Avito integrated Olympus results into their main property listings</p>
+    								<p><i><small>OKR: Increase Avito monthly organic leads run-rate by +100% from 934 to 1,868</small></i></p>
+    								<br>
+                                    <p>We’re so excited about this development! 😁 We’ve always known that the <i>majority</i> of new construction home buyers <i>don’t</i> start their journeys <i>planning</i> to buy new construction. So, we’ve long suspected that by not integrating new properties with second-hand ones, we would be missing a lot of uncaptured value.</p>
+    								<br>
+                                    <p>Avito prioritised this implementation at the start of February and in the space of a few weeks, they have their first version live on their Msite.</p>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image">
+			    					<img src="https://dl.dropboxusercontent.com/s/uzyiuyhaocr05k5/2020-03-listings-integration.png?dl=0">
+			    				</td>
+			    			</tr>
+    						<tr>
+    							<td class="inner-td">
+                                    <p><b>IMPACT</b></p>
+                                    <br>
+                                    <p>Since the launch 5 days ago, and with a basic implementation, the integration is generating a significant impact...</p>
+                                    <ul>
+                                        <li>The listings integration is generating approx <b>31% of organic leads</b>. That’s an uplift of <b>+42%</b>!</li>
+                                    </ul>
+                                    <p>Obviously, the overall impact on total leads is lower as a significant number of leads are generated through from paid sources but this is a big step towards a <b>more profitable marketplace</b>. There are a lot of optimisation opportunities still to come so we expect this contribution to grow, which is good as we still have some way to go before doubling the run rate and hitting the OKR!</p>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image">
+			    					<img src="https://dl.dropboxusercontent.com/s/c4xjhd17njut6lu/2020-03-organic-leads.png?dl=0">
+			    				</td>
+			    			</tr>
+                            <tr>
+                                <td class="inner-td">
+                                    <p><i><small>Note that the integration was launched midweek so this chart doesn't show the full weekly runrate impact yet.</small></i></p>
+                                </td>
+                            </tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h3">We improved SEO ranking for location queries</p>
+    								<p><i><small>OKR: Increase Avito monthly Google SEO visits run-rate by +100% from 2,387 to 4,774</small></i></p>
+    								<br>
+                                    <p>We continue to chip away at SEO optimisations with the help of our SEO gurus, Esteve Castells and Youness Haddouk. During February, we launched two new improvements:</p>
+                                    <ul>
+                                        <li>Improve search H1 text</li>
+                                        <li>Exclude bots from experiments</li>
+                                    </ul>
+                                	<p>Together with several improvements that were launched in January, we’re starting to see new SEO growth. In particular, we’re now ranking and receiving traffic for location based queries that we previously weren’t. Although the absolute volumes aren’t huge, we need to acknowledge that this is hyper-niche vertical. However, the conversion performance from this channel is extremely high so it’s worth growing.</p>
+                                    <br>
+                                    <p><b>IMPACT</b></p>
+                                    <ul>
+                                        <li>Our weekly run-rate vs the Dec 2019 average is currently up approx <b>+55%</b> (still someway from our moon-shot Q1 goal of +100% but <b>great</b> performance nonetheless!)</li>
+                                    </ul>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image">
+			    					<img src="https://dl.dropboxusercontent.com/s/moiereovyv9xff7/2020-03-seo-clicks.png?dl=0">
+			    				</td>
+			    			</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+                                    <p class="h3">We continue to increase overall portal CVR</p>
+    								<p><i><small>OKR: Increase Buyer Portal organic traffic form lead conversion rate by +30% from 0.886% to 1.152%</small></i></p>
+    								<br>
+                                    <p>We worked on a couple of improvements to the buyer journey in the portal last month:</p>
+                                    <ul>
+                                        <li>We added more clarity to suggested locations when searching by adding vicinities. For example, when searching for a district such as “Anfa” the suggestion now shows the matching string <b>with</b> the applicable vicinity (e.g. “Anfa, Casablanca”). We also added new search box instrumentation to allow us to experiment in this area more easily moving forward.</li>
+                                    	<li>We experimented with a new “Contact” CTA button text on the mobile project page (“Etre rappelé” vs “Contacter”). This experiment is still running but is looking positive both in CTR and conversion rate. Once we’re sure the numbers are statistically significant, we’ll look at applying this message across all CTA buttons.</li>
+                                    </ul>
+                                    <p>Our approach of small iterative optimisations appears to be bearing fruit with the overall CVR of the portal, which is creeping ever closer to our Q1 OKR goal! Hopefully, more progress to report on this next month!</p>
+                                    <br>
+    							</td>
+    						</tr>
+							<tr>
+			    				<td class="image">
+			    					<img src="https://dl.dropboxusercontent.com/s/npbjy42jkhf2ruv/2020-03-cvr.png?dl=0">
+			    				</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h3">There were also some things that didn’t go as well as we wanted…</p>
+                                    <ul>
+                                        <li><b>Sharing:</b> Buyers can now share project & unit pages on mobile devices but the engagement with this feature is lower than we expected.</li>
+                                        <li><b>“See More Projects” optimisations:</b> We spent a lot of time in January & February trying to find ways for buyers who land on a project page from an external source (such as Google or Facebook) to find more projects by directing them to search. We’re not convinced that this is having the desired effect so we’re going to take this back to the drawing board to validate more ideas.</li>
+                                    </ul>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h3">… and some things we just didn’t get around to</p>
+                                    <ul>
+                                        <li><b>Recommender carousel on Avito.ma property detail pages:</b> This is still in the works but was re-prioritised so that Avito could focus on the listings integration mentioned above.</li>
+                                        <li><b>Search Alerts:</b> We realised that we need to invest more time in getting alignment with Avito Marketing on the goals for this channel.</li>
+                                        <li><b>Search history suggestions:</b> We see this as an overall CVR driver but we prioritised adding location vicinities and instrumentation before starting this. We expect to look into this in March.</li>
+                                        <li><b>Searching from detail pages:</b> We had been deferring this initiative so as to be able to focus on our “See more projects” initiatives. With hindsight, this may have been the one to focus on as a less blunt solution to help users explore other projects.</li>
+                                    </ul>
+                                    <br>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+            <table class="main-table">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h2">To come in March 🔜</p>
+                                    <p>This is the final push as we do our best to achieve our Q1 OKRs. Notable areas we currently plan to work on:</p>
+                                    <ul>
+                                        <li>New approach to project brochure downloads to help drive form leads.</li>
+                                        <li>Inactive projects handling to boost SEO performance.</li>
+                                        <li>Avito listings integration optimisation to drive more organic traffic and leads.</li>
+                                        <li>Search suggestion enhancements to help buyers find what they’re looking for faster.</li>
+                                        <li>Olympus listings page speed improvements to improve the buyer experience.</li>
+                                        <li>Avito recommender carousel to drive more organic traffic and leads (TBD)</li>
+                                    </ul>
+    								<br>
+                                    <p>We’ll also be working to understand the Q2 business priorities of the marketplaces as part of the PEAK initiative, and establish shared OKRs with them.</p>
+    								<br>
+                                    <p>Finally, we want to apply some learnings from the Product Academy, which I attended at the end of February.</p>
+    								<br>
+    								<hr>
+    								<br>
+    								<br>
+									<p>Phew! If you made it down to here, thanks for sticking with me! As last time, you can see prior updates below and do let me know if there are any questions, suggestions or ideas you think we should explore.</p>
+                                    <ul>
+                                        <li><a href="https://gammonj.github.io/olympus/newsletter/2020-02/olympus-monthly-2020-02.html">2020: February</a></li>
+                                        <li><a href="https://gammonj.github.io/olympus/newsletter/2020-01/olympus-monthly-2020-01.html">2020: January</a></li>
+                                        <li><a href="https://gammonj.github.io/olympus/newsletter/2019-12/olympus-monthly-2019-12.html">2019: December</a></li>
+                                    </ul>
+									<p>Until next time!</p>
+									<br>
+									<br>
+									<table>
+										<tr>
+											<td width="100">
+												<img src="https://dl.dropboxusercontent.com/s/vdzwsnc86pd95pw/james.png?dl=0" width="100" style="padding-right: 12px">
+											</td>
+											<td>
+												<p class="h3">James Gammon</p>
+                                    			<p>Olympus Product Mgmt</p>
+											</td>
+										</tr>
+									</table>
+
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr>
+            </table> <!--- End Main Table -->
+            <table class="outer-table-3">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="footer">
+    								<img src="https://dl.dropboxusercontent.com/s/izo2o9scjl7o8qc/olympus-logo.png?dl=0">
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr>
+    		</table> <!--- End Main Table -->
+    	</div> <!--- End Wrapper Inner -->
+    </div> <!--- End Wrapper -->
+    <br>
+</body>
+</html>
